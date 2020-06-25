@@ -25,14 +25,15 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        plugins: ['transform-object-rest-spread', 'transform-object-assign', 'es6-promise'],
                         presets: [
-                            ['env', {
+                            ['@babel/preset-env', {
+                                useBuiltIns: 'usage',
                                 targets: {
                                     browsers: ['last 2 versions', 'ie >= 10'],
                                 },
                             }],
                         ],
+
                     },
                 },
             },

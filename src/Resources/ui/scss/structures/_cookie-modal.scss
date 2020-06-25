@@ -18,10 +18,11 @@ $modal-spacing: 130px;
     z-index: $kmcc_z-modal;
 
     padding-top: 30px;
+    display: none;
+
+    pointer-events: none;
 
     overflow: hidden;
-
-    opacity: 0;
 
     background: transparent;
 
@@ -51,7 +52,9 @@ $modal-spacing: 130px;
 .kmcc-cookie-modal--visible {
     z-index: $kmcc_z-modal--visible;
 
-    opacity: 1;
+    display: block;
+
+    pointer-events: all;
 
     background: transparent;
 

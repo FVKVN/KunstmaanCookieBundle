@@ -4,14 +4,15 @@
 
 .kmcc-backdrop {
     position: fixed;
-    top: -2.5%;
-    left: -2.5%;
+    top: 0;
+    left: 0;
     z-index: $kmcc_z-modal-backdrop;
 
-    width: calc(100% + 5%);
-    height: calc(100% + 5%);
+    width: 100%;
+    height: 100%;
+    display: none;
 
-    opacity: 0;
+    pointer-events: none;
 
     background-color: $kmcc_grey;
 
@@ -25,5 +26,7 @@
 .kmcc-backdrop--visible {
     z-index: $kmcc_z-modal-backdrop--visible;
 
-    opacity: 1;
+    display: block;
+
+    pointer-events: all;
 }

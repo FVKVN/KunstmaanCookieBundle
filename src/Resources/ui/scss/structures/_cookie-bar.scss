@@ -16,6 +16,8 @@
 
     background: $kmcc_grey;
 
+    pointer-events: none;
+
     font-size: 16px;
 
     h2 {
@@ -41,6 +43,8 @@
 
 .kmcc-cookie-bar--visible {
     display: block;
+
+    pointer-events: all;
 }
 
 .kmcc-cookie-bar__footer {
